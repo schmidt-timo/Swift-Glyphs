@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850F56F32556EC630015DEE6 /* Rhombus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F56F22556EC630015DEE6 /* Rhombus.swift */; };
 		857CFFCF2549B24C009DBB5A /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857CFFCE2549B24C009DBB5A /* Point.swift */; };
 		857CFFD22549B31F009DBB5A /* Glyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857CFFD12549B31F009DBB5A /* Glyph.swift */; };
 		857CFFD82549B4CF009DBB5A /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857CFFD72549B4CF009DBB5A /* Square.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		850F56F22556EC630015DEE6 /* Rhombus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rhombus.swift; sourceTree = "<group>"; };
 		857CFFCE2549B24C009DBB5A /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		857CFFD12549B31F009DBB5A /* Glyph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glyph.swift; sourceTree = "<group>"; };
 		857CFFD72549B4CF009DBB5A /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				857CFFD72549B4CF009DBB5A /* Square.swift */,
 				857CFFE32549BD87009DBB5A /* Circle.swift */,
 				857CFFE62549BDA8009DBB5A /* Triangle.swift */,
+				850F56F22556EC630015DEE6 /* Rhombus.swift */,
 				9DC306AE19E7F1380052F5F1 /* Supporting Files */,
 			);
 			path = "iOS2-Vorgabe";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				857CFFD82549B4CF009DBB5A /* Square.swift in Sources */,
+				850F56F32556EC630015DEE6 /* Rhombus.swift in Sources */,
 				9DC306D519E7FB810052F5F1 /* Drawing.swift in Sources */,
 				857CFFE42549BD87009DBB5A /* Circle.swift in Sources */,
 				9DC306B319E7F1380052F5F1 /* ViewController.swift in Sources */,

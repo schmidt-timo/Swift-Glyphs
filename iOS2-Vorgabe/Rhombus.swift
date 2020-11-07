@@ -32,4 +32,11 @@ class Rhombus: Glyph {
         super.paint()
     }
     
+    // small change to move the index in the center of the shape
+    override func showGlyphNumber(index: Int) {
+        let x = center.x
+        let y = center.y - 4
+        DrawHelper.drawGlyphNumber(index: index, atX: x, y: y)
+    }
+    
 }

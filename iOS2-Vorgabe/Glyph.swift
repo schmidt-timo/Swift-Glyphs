@@ -33,6 +33,12 @@ class Glyph: Drawing {
     
     var showDescription: Bool
     
+    func showGlyphNumber(index: Int) {
+        let x = center.x
+        let y = center.y
+        DrawHelper.drawGlyphNumber(index: index, atX: x, y: y)
+    }
+    
     func paint() {
         if showDescription {
             let x = center.x

@@ -61,6 +61,7 @@ class GlyphView: UIView {
     {
         for i in 0...2 {
             glyphs[i].paint()
+            glyphs[i].showGlyphNumber(index: i)
         }
     }
 

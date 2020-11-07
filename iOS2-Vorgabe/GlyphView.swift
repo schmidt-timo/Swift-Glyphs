@@ -9,12 +9,12 @@
 import UIKit
 
 enum GlyphType: Int {
-    case square = 0, circle, triangle
+    case square = 0, circle, triangle, rhombus
 }
 
 class GlyphView: UIView {
     
-    var glyphs = [Square(), Circle(), Triangle()]
+    var glyphs = [Square(), Circle(), Triangle(), Rhombus()]
     
     // MARK: - Change Handlers
     
@@ -39,6 +39,8 @@ class GlyphView: UIView {
             glyphs[index] = Circle(size: size, center: center, color: color)
         case .triangle:
             glyphs[index] = Triangle(size: size, center: center, color: color)
+        case .rhombus:
+            glyphs[index] = Rhombus(size: size, center: center, color: color)
         }
     }
     
@@ -59,7 +61,7 @@ class GlyphView: UIView {
     
     override func draw(_ rect: CGRect)
     {
-        for i in 0...2 {
+        for i in 0...3 {
             glyphs[i].paint()
             glyphs[i].showGlyphNumber(index: i)
         }

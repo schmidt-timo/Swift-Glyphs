@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var typeIndex = [0, 1, 2]
-    var colorIndex = [1, 3, 0]
-    var size = [35.0, 40.0, 50.0]
+    var typeIndex = [0, 1, 2, 3]
+    var colorIndex = [1, 3, 0, 2]
+    var size = [35.0, 40.0, 50.0, 60.0]
     let color = [ 
         UIColor(red: 1,   green: 0, blue: 0,   alpha: 0.75), 
         UIColor(red: 0,   green: 1, blue: 0,   alpha: 0.75),
@@ -89,8 +89,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let x = [50.0, 150.0, 250.0]
-        let y = [250.0, 150.0, 200.0]
+        let x = [50.0, 150.0, 250.0, 300.0]
+        let y = [250.0, 150.0, 200.0, 300.0]
         
         for i in 0..<typeIndex.count {
             glyphView.glyph(index: i, changedType: GlyphType(rawValue: typeIndex[i]) ?? .square)

@@ -35,6 +35,29 @@ class DrawHelper {
         path.fill()
     }
     
+    // für Raute
+    class func drawRhombus(x: Double, y: Double, size: Double, color: UIColor) {
+        let path = UIBezierPath()
+        
+        let d = CGFloat(size/2)
+        let s = CGFloat(size)
+        let y0 = CGFloat(y - 4)
+        let x0 = CGFloat(x - size/2)
+
+        let left = CGPoint(x: x0, y: y0)
+        let top = CGPoint(x: x0+d, y: y0+d)
+        let right = CGPoint(x: x0+s, y: y0)
+        let bottom = CGPoint(x: x0+d, y: y0-d)
+        
+        path.move(to: left)
+        path.addLine(to: top)
+        path.addLine(to: right)
+        path.addLine(to: bottom)
+        path.close()
+        color.setFill()
+        path.fill()
+    }
+    
     class func drawDescription(area a: Double, circumferrence c: Double, atX x: Double, y: Double) {
         let text: NSString = String(format: "%.1lf / %.1lf", a, c) as NSString
         UIColor.black.setFill()

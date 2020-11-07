@@ -20,11 +20,11 @@ class Rhombus: Glyph {
     }
     
     override var area: Double {
-        return 0.5 * size * size
+        return 0.5 * size * size    // A = 0.5 * e * f
     }
     
     override var circumference: Double {
-        return size * 4
+        return 4 * sqrt(pow(size/2, 2) + pow(size/2, 2))    // U = 4 * a
     }
     
     override func paint() {
